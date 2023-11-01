@@ -1,0 +1,11 @@
+<swiper-container class="swiper-container" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true" 
+slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0" 
+coverflow-effect-depth="200" coverflow-effect-modify="1" coverflow-effect-slide-shadows="false">
+        <swiper-slide *ngFor="let producto of fotos" class="swiper-slide">
+                <img [src]="producto.url" class="imagen">
+                <div class="nombre">{{producto.nombre}}</div>
+                <div class="precio">{{producto.precio}}</div>
+                <div class="cantidad">{{producto.cantidad}}</div>
+                <button class="button">Deseo</button>
+        </swiper-slide>
+</swiper-container>
